@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { useInView } from "react-intersection-observer";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.4);
@@ -19,8 +20,11 @@ export default function Experience() {
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => {
+          const { ref, inView } = useInView({
+            triggerOnce: true,
+          });
           return (
-            <React.Fragment key={index}>
+            <div key={index} ref={ref} className="vertical-timeline-element">
               <VerticalTimelineElement
                 contentStyle={{
                   background:
@@ -36,7 +40,7 @@ export default function Experience() {
                       ? "0.4rem solid #9ca3af"
                       : "0.4rem solid rgba(255,255,255,0.5)",
                 }}
-                visible={true}
+                visible={inView}
                 date={item.date}
                 icon={item.icon}
                 iconStyle={{
@@ -53,7 +57,7 @@ export default function Experience() {
                   ))}
                 </ul>
               </VerticalTimelineElement>
-            </React.Fragment>
+            </div>
           );
         })}
       </VerticalTimeline>
