@@ -33,7 +33,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Engineer",
+    title: "Software Engineer at Rupyy(Cardekho Group)",
     location: "Gurgaon, Haryana",
     description: [
       `Utilized Node.js and Express.js to build robust server applications, implementing user sessions, cookie parsing, and CORS for
@@ -47,8 +47,8 @@ export const experiencesData = [
     date: "July 2023 - Present",
   },
   {
-    title: "Software Developer Intern",
-    location: "Snackmagic Vinsol",
+    title: "Software Developer Intern at Snackmagic | Vinsol",
+    location: "Patel Nagar, Delhi",
     description: [
       `Skillfully executed tasks leveraging Ruby's advanced features including strings, ranges, procs, lambdas, yield, and 
       enumerators, contributing to critical project functionalities.`,
@@ -59,8 +59,8 @@ export const experiencesData = [
     date: "July 2022 - September 2022",
   },
   {
-    title: "Android App Development Intern:",
-    location: "UpTodd",
+    title: "Android App Development Intern at UpTodd",
+    location: "Noida, Uttar Pradesh",
     description: [
       `Boosted user engagement by 10% through YouTube Base Activity and YouTube Player for suggested videos.`,
       `Enhanced user experience with customized dialog boxes for new feature announcements.`,
