@@ -39,9 +39,9 @@ export const experiencesData = [
       `Utilized Node.js and Express.js to build robust server applications, implementing user sessions, cookie parsing, and CORS for
       secure and scalable server-side operations.`,
       `Integrated AWS S3 for secure and efficient fetching of 13+ cyphered images and PDFs, enhancing file management.`,
-      `Led the migration of 57% of the PHP-based payments website to React, enhancing performance and user experience.`,
+      `Led the migration of large-scale PHP-based payments website to MERN stack, enhancing performance and user experience.`,
       `Implemented advanced Redux state management for robust client-side state management, including store creation, 
-      reducers, and Redux Persist integration for data persistence]`,
+      reducers, and Redux Persist integration for data persistence`,
     ],
     icon: React.createElement(CgWorkAlt),
     date: "July 2023 - Present",
